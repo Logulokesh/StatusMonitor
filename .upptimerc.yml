@@ -1,36 +1,59 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# ✅ Basic Config
+owner: Logulokesh
+repo: StatusMonitor
 
+# ✅ Monitored Services
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  - name: Ollama
+    url: https://ollama.logu.au
+  - name: Apache Spark
+    url: https://spark.logu.au
+  - name: Apache Airflow
+    url: https://airflow.logu.au
+  - name: Langfuse
+    url: https://langfuse.logu.au
+  - name: Airbyte
+    url: https://airbyte.logu.au
+  - name: Apache Kafka
+    url: https://kafka.logu.au
+  - name: MinIO
+    url: https://minio.logu.au
+  - name: Trino
+    url: https://trino.logu.au
+  - name: Metabase
+    url: https://metabase.logu.au
+  - name: Nginx Proxy Manager
+    url: https://nginx.logu.au
+  - name: HashiCorp Vault
+    url: https://vault.logu.au
+  - name: Portainer
+    url: https://portainer.logu.au
+  - name: Grafana
+    url: https://grafana.logu.au
+  - name: Prometheus
+    url: https://prometheus.logu.au
+  - name: Uptime Kuma
+    url: https://uptimekuma.logu.au
+  - name: Traccar
+    url: https://traccar.logu.au
+  - name: n8n
+    url: https://n8n.logu.au
+  - name: Jellyfin
+    url: https://music.logu.au
 
+# ✅ Status Website Configuration
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
+  cname: status.logu.au  # Optional: Set this if you plan to use a custom domain
+  # baseUrl: /StatusMonitor  # Uncomment only if you don’t use a custom domain
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  name: KinAI Status Monitor
+  introTitle: "📡 KinAI Status Dashboard"
+  introMessage: |
+    Monitoring 20+ critical services for KinAI — real-time insights, zero servers. 
+    Powered by GitHub Actions, Issues, and Pages. [**Build yours**](https://github.com/upptime/upptime)
+
   navbar:
     - title: Status
       href: /
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+      href: https://github.com/Logulokesh/StatusMonitor
